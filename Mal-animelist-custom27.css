@@ -5,15 +5,7 @@
     --color-onhold: #f1c83e;
     --color-dropped: #a12f31;
     --color-plantowatch: #c3c3c3;
-    /*color elements and font*/
-    --color-scoreprogress: #0080ff;
-    --color-title: #fbfbfb;
-    --color-progress: #fff;
-    --color-type: #fff;
-    --color-number: #fff;
-    --color-airing-rewatching: #ff0;
-    --color-icon-streaming: #4e83ff;
-    --font: Verdana, Arial;
+
     --reduction-size-image: 1;
 }
 body{
