@@ -6,108 +6,123 @@
     --color-dropped: #a12f31;
     --color-plantowatch: #c3c3c3;
 
-    --reduction-size-image: 1;
+    /*interface size proposal (1 = default - 1 > 0 = little - 1 < = big) !no unit!*/
+    --interface-size-proposal: 1;
 }
 body{
-    font-size: calc(11px * var(--reduction-size-image));
+    font-size: calc(11px * var(--interface-size-proposal));
 }
-
+/*background image*/
+body.ownlist.anime{
+    background-color: dimgrey;
+    background-size: cover;
+    background-position: 90% top !important;
+}
+/*defined size for image*/
 .list-block {
-  --height-img: calc(272px*var(--reduction-size-image)) !important;
-  --width-img: calc(192px*var(--reduction-size-image)) !important;
+  --height-img: calc(272px*var(--interface-size-proposal)) !important;
+  --width-img: calc(192px*var(--interface-size-proposal)) !important;
 }
-
+/*defined size for item*/
 .list-table tbody.list-item {
     height: calc(var(--height-img) + 6.8em) !important;
 }
 
-.data.title .link {
-    height: 2.6em !important;
-    padding: -5px !important;
-    text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000 !important;
-    top: calc(var(--height-img) + 25px);
-    width: calc((var(--width-img)) - 1.5em) !important;
-    left: 9px;
-    text-overflow: ellipsis;
-    text-align: center;
-    font-size: 1.2em !important;
-}
+
+
+/*title*/
 .data.title {
     z-index: 1;
 }
+.data.title .link {
+    width: calc((var(--width-img)) - 1.5em) !important;
+    height: 2.6em !important;
+    left: 9px;
+    top: calc(var(--height-img) + 25px);
+    padding: -5px !important;
+    font-size: 1.2em !important;
+    text-overflow: ellipsis;
+    text-align: center;
+    text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000 !important;
+}
+/*image*/
 .data.image {
-    top: 0;
     z-index: 0;
-}
-
-.data.status {
-    top: calc(var(--height-img) + 2.5px);
-    height: var(--height-bottom-section);
-    left: 1px;
-    width: calc(var(--width-img) + 3px) !important;
-}
-.data.number {
     top: 0;
-    left: 5px;
+}
+/*status*/
+.data.status {
+    width: calc(var(--width-img) + 3px) !important;
+    height: var(--height-bottom-section);
+    left: 1px;    
+    top: calc(var(--height-img) + 2.5px);
+}
+/*number*/
+.data.number {
     z-index: 1;
+    left: 5px;
+    top: 0;
     text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000;
 }
+/*type*/
 .data.type, .data.rated {
-    position: absolute;
-    left: calc(var(--width-img) - 44px);
     z-index: 1;
-    top: 2px;
-    text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000;
-    text-align: right !important;
+    position: absolute;
     width: 43px;
+    left: calc(var(--width-img) - 44px);
+    top: 2px;
+    text-align: right !important;
+    text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000;
 }
 .data.type::before{
     content: none;
 }
+/*edit and more*/
 .add-edit-more {
-    top: calc(var(--height-img) + 2.5px);
     left: 2px;
+    top: calc(var(--height-img) + 2.5px);
 }
+/*defined size for more open*/
+tr.more-info {
+    height: calc(var(--height-img) + 4px);
+    left: 0;
+}
+/*score*/
 .anime .data.score {
-    left: calc(var(--width-img) * 0.4);
     z-index: 1;
+    left: calc(var(--width-img) * 0.4);
     top: calc(var(--height-img) + 3px);
 }
+/*progress*/
 .data.progress, .data.chapter, .data.volume {
-    top: calc(var(--height-img) + 3px);
     z-index: 1;
     width: var(--width-img);
-    float: right;
     left: 0;
+    top: calc(var(--height-img) + 3px);
+    float: right;
 }
 .data.progress > * {
     float: right;
 }
+/*streaming*/
 .data.title .icon-watch2 {
-    top: calc(var(--height-img) - 20px);
-    left: 4px;
     width: 20px;
+    left: 4px;
+    top: calc(var(--height-img) - 20px);
     text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000;
 }
-
+/*hidden overflow and notes*/
 .list-table tbody.list-item {
     width: calc(var(--width-img) + 4.8px);
 }
 .list-table .list-table-data .data.tags {
-    word-wrap: break-word;
     display: none;
 }
 .data.title .notes {
-    text-align: left;
-    width: 100% !important;
     display: none;
 }
 .data.title::after {
     visibility: hidden;
-}    
-tr.more-info {
-    left: 0;
-    height: calc(var(--height-img) + 4px);
 }
 
 
