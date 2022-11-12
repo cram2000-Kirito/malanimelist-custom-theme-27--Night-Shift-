@@ -1,4 +1,4 @@
-:root{
+:root {
     /*color status*/
     --color-current: #2db038;
     --color-completed: #26448f;
@@ -9,11 +9,11 @@
     /*interface size proposal (1 = default - 1 > 0 = little - 1 < = big) !no unit!*/
     --interface-size-proposal: 1;
 }
-body{
+html, body {
     font-size: calc(11px * var(--interface-size-proposal));
 }
 /*background image*/
-body.ownlist.anime{
+body.ownlist.anime {
     background-color: dimgrey;
     background-size: cover;
     background-position: 90% top !important;
@@ -25,8 +25,10 @@ body.ownlist.anime{
 }
 /*defined size for item*/
 .list-table tbody.list-item {
-    height: calc(var(--height-img) + 6.8em) !important;
+    height: calc(var(--height-img)*1.42);
 }
+
+
 
 
 
@@ -36,9 +38,9 @@ body.ownlist.anime{
 }
 .data.title .link {
     width: calc((var(--width-img)) - 1.5em) !important;
-    height: 2.6em !important;
+    height: auto !important;
     left: 9px;
-    top: calc(var(--height-img) + 25px);
+    top: calc(var(--height-img) + 2.272727272727273em * 2);
     padding: -5px !important;
     font-size: 1.2em !important;
     text-overflow: ellipsis;
@@ -48,20 +50,22 @@ body.ownlist.anime{
 /*image*/
 .data.image {
     z-index: 0;
+    height: auto;
     top: 0;
 }
 /*status*/
 .data.status {
-    width: calc(var(--width-img) + 3px) !important;
-    height: var(--height-bottom-section);
-    left: 1px;    
-    top: calc(var(--height-img) + 2.5px);
+    width: auto;
+    height: auto;
+    left: 0;    
+    top: var(--height-img);
 }
 /*number*/
 .data.number {
     z-index: 1;
     left: 5px;
     top: 0;
+    line-height: 1.5em;
     text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000;
 }
 /*type*/
@@ -74,24 +78,42 @@ body.ownlist.anime{
     text-align: right !important;
     text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000;
 }
-.data.type::before{
+.data.type::before {
     content: none;
 }
 /*edit and more*/
 .add-edit-more {
     left: 2px;
-    top: calc(var(--height-img) + 2.5px);
+    top: calc(var(--height-img) + 0.22727272727272727em);
+    font-size: 0.9em;
+}
+.add-edit-more span:first-child a::before, .add-edit-more .more a::before {
+    font-size: calc(14px*var(--interface-size-proposal));
+}
+.add-edit-more { /*dash in the div....*/
+    visibility: hidden;
+}
+.add-edit-more > * {
+    visibility: visible;
 }
 /*defined size for more open*/
 tr.more-info {
     height: calc(var(--height-img) + 4px);
     left: 0;
+    font-size: 1.12em;
 }
 /*score*/
-.anime .data.score {
-    z-index: 1;
+.anime .data.score, .manga .data.score {
+    z-index: 2;
     left: calc(var(--width-img) * 0.4);
     top: calc(var(--height-img) + 3px);
+}
+.data.score a::before {
+    padding-top: min(1.5%, 0.8em);
+    font-size: calc(14px*var(--interface-size-proposal));
+}
+.manga .data.score {
+    right: 0;
 }
 /*progress*/
 .data.progress, .data.chapter, .data.volume {
@@ -101,19 +123,38 @@ tr.more-info {
     top: calc(var(--height-img) + 3px);
     float: right;
 }
-.data.progress > * {
+.data.progress>*, .data.chapter>*, .data.volume>*{
     float: right;
+}
+.data.progress span:first-child::before, .data.chapter span:first-child::before, .data.volume span:first-child::before {
+    padding-top: min(1.5%, 0.8em);
+    font-size: calc(14px*var(--interface-size-proposal));
+}
+.data.chapter{
+    top: calc(var(--height-img) + 23px*var(--interface-size-proposal)) !important;
 }
 /*streaming*/
 .data.title .icon-watch2 {
     width: 20px;
-    left: 4px;
-    top: calc(var(--height-img) - 20px);
+    left: 0.36363636363636365em;
+    top: calc(var(--height-img) - 1.8181818181818181em);
+    text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000;
+}
+.icon-watch2 .malicon.malicon-movie-episode, .icon-watch2 .malicon.malicon-movie-pv, .icon-watch2 .malicon.malicon-streaming, .icon-watch-pv2 .malicon.malicon-movie-episode, .icon-watch-pv2 .malicon.malicon-movie-pv, .icon-watch-pv2 .malicon.malicon-streaming {
+    font-size: 1.3636363636363635em;
+}
+.data.priority {
+    z-index: 1;
+    position: absolute;
+    width: var(--width-img);
+    left: 0;
+    top: 0;
+    text-align: right !important;
     text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000;
 }
 /*hidden overflow and notes*/
 .list-table tbody.list-item {
-    width: calc(var(--width-img) + 4.8px);
+    width: calc(var(--width-img) + 4px);
 }
 .list-table .list-table-data .data.tags {
     display: none;
@@ -128,7 +169,7 @@ tr.more-info {
 
 
 /*status framework*/
-.list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status.watching ~ .data.image {
+.list-table .list-table-data .data.status.reading ~ .data.image, .list-table .list-table-data .data.status.watching ~ .data.image {
     border: var(--color-current) 2px solid !important;
 }
 .list-table .list-table-data .data.status.completed ~ .data.image {
@@ -140,6 +181,6 @@ tr.more-info {
 .list-table .list-table-data .data.status.dropped ~ .data.image {
     border: var(--color-dropped) 2px solid !important; 
 }
-.list-table .list-table-data .data.status.plantoread, .list-table .list-table-data .data.status.plantowatch ~ .data.image {
+.list-table .list-table-data .data.status.plantoread ~ .data.image, .list-table .list-table-data .data.status.plantowatch ~ .data.image {
     border: var(--color-plantowatch) 2px solid !important; 
 }
