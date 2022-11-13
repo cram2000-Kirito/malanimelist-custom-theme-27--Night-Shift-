@@ -1,0 +1,4323 @@
+
+/********************************************************************************
+
+ * original theme css - preset_white.css
+
+ ********************************************************************************/
+
+
+#advanced-options {
+
+    position: absolute;
+
+    top: 24px;
+
+    left: 0;
+
+    right: 0;
+
+    background-color: #F6F6F6;
+
+    display: none;
+
+    width: 860px;
+
+    margin: 0 auto;
+
+    padding: 25px 0px 30px;
+
+    border: #EBEBEB 1px solid;
+
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+
+    -o-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+
+    -ms-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+
+    color: #323232;
+
+    text-align: left;
+
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+
+    z-index: 1101;
+
+}
+
+#advanced-options .advanced-options-header {
+
+    width: 750px;
+
+    margin: 0px auto;
+
+    padding-bottom: 4px;
+
+    border-bottom: 1px solid #BEBEBE;
+
+    font-size: 16px;
+
+}
+
+
+#advanced-options .advanced-options-header .description {
+
+    font-size: 12px;
+
+    font-weight: normal;
+
+    margin-left: 8px;
+
+}
+
+
+#advanced-options select {
+
+    -ms-appearance: none;
+
+    -webkit-appearance: none;
+
+    -moz-appearance: none;
+
+    appearance: none;
+
+    background-image: url(/img/pc/ownlist/icon_pulldown_triangle.png);
+
+    background-repeat: no-repeat;
+
+    background-position: center right;
+
+    background-size: 18px 8px;
+
+    background-color: #FFFFFF;
+
+    display: inline-block;
+
+    height: 25px;
+
+    padding: 4px 20px 4px 4px;
+
+    padding-right: 4px\0;
+
+    border: #BEBEBE 1px solid;
+
+    border-radius: 0px;
+
+    font-size: 12px;
+
+}
+
+#advanced-options select::-ms-expand {
+
+    display: none;
+
+}
+
+
+#advanced-options select:disabled {
+
+    background-image: url(/img/pc/ownlist/icon_pulldown_triangle_disable.png);
+
+    color: #9B9B9B;
+
+}
+
+
+#advanced-options input[type=text] {
+
+    padding: 4px;
+
+    border: #BEBEBE 1px solid;
+
+}
+
+
+#advanced-options input:focus {
+
+    outline: none;
+
+}
+
+
+/* sort */
+
+#advanced-options .sort-widget {
+
+    margin: 0px auto;
+
+    padding: 12px 0px 0px;
+
+    width: 750px;
+
+}
+
+#advanced-options .sort-widget:last-of-type {
+
+    padding-bottom: 45px;
+
+}
+
+
+#advanced-options .sort-widget select {
+
+    width: 172px;
+
+    margin-right: 8px;
+
+}
+
+
+#advanced-options .sort-widget input[type=radio] {
+
+    display: none;
+
+}
+
+#advanced-options .sort-widget input[type=radio] + label {
+
+    background-color: #FFFFFF;
+
+    display: inline-block;
+
+    width: 56px;
+
+    padding: 5px 0px;
+
+    border: #BEBEBE 1px solid;
+
+    border-radius: 4px;
+
+    color: #323232;
+
+    font-size: 12px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+#advanced-options .sort-widget input[type=radio]:checked + label {
+
+    background-color: #4065BA;
+
+    border: #4065BA 1px solid;
+
+    color: #FFFFFF;
+
+}
+
+#advanced-options .sort-widget input[type=radio]:disabled + label {
+
+    border: #BEBEBE 1px solid;
+
+    color: #9B9B9B;
+
+}
+
+#advanced-options .sort-widget input[type=radio]:checked:disabled + label {
+
+    background-color: #FFFFFF;
+
+    border: #BEBEBE 1px solid;
+
+    color: #9B9B9B;
+
+}
+
+
+/* filter */
+
+#advanced-options .filter-widget {
+
+    margin: 0px auto;
+
+    padding: 12px 0px 0;
+
+    width: 750px;
+
+}
+
+
+#advanced-options .filter-widget select {
+
+    margin-right: 8px;
+
+    font-size: 12px;
+
+}
+
+
+#advanced-options .filter-widget.title input[type=text] {
+
+    width: 360px;
+
+}
+
+
+#advanced-options .filter-widget.airing-status select,
+
+#advanced-options .filter-widget.publishing-status select {
+
+    width: 152px;
+
+}
+
+
+#advanced-options .filter-widget.producer select,
+
+#advanced-options .filter-widget.magazine select {
+
+    width: 360px;
+
+}
+
+
+#advanced-options .filter-widget.aired-date select.year,
+
+#advanced-options .filter-widget.published-date select.year {
+
+    width: 80px;
+
+}
+
+
+#advanced-options .filter-widget.aired-date select.month,
+
+#advanced-options .filter-widget.published-date select.month,
+
+#advanced-options .filter-widget.aired-date select.day,
+
+#advanced-options .filter-widget.published-date select.day {
+
+    width: 60px;
+
+}
+
+
+#advanced-options .filter-widget.aired-date .text,
+
+#advanced-options .filter-widget.published-date .text {
+
+    display: inline-block;
+
+    margin-right: 4px;
+
+    font-size: 12px;
+
+}
+
+
+#advanced-options .filter-widget.aired-season select.year {
+
+    width: 80px;
+
+}
+
+
+#advanced-options .filter-widget.aired-season select.season {
+
+    width: 110px;
+
+}
+
+
+#advanced-options .sort-widget .widget-header,
+
+#advanced-options .filter-widget .widget-header {
+
+    display: inline-block;
+
+    width: 110px;
+
+    font-size: 12px;
+
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+
+}
+
+
+#advanced-options .sort-widget:last-of-type,
+
+#advanced-options .filter-widget:last-of-type {
+
+    padding-bottom: 40px;
+
+}
+
+
+#advanced-options .advanced-options-button {
+
+    width: 750px;
+
+    margin: 0px auto;
+
+    padding: 12px 0px 0px;
+
+    border-top: 1px solid #BEBEBE;
+
+    text-align: center;
+
+}
+
+
+#advanced-options .btn-apply,
+
+#advanced-options .btn-clear {
+
+    background-color: rgba(64, 101, 186, 1);
+
+    display: inline-block;
+
+    width: 135px;
+
+    margin: 0 4px;
+
+    padding: 6px 0px;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+
+    color: #FFFFFF;
+
+    text-align: center;
+
+    -moz-transition-property: all;
+
+    -o-transition-property: all;
+
+    -webkit-transition-property: all;
+
+    transition-property: all;
+
+    -moz-transition-duration: 0.3s;
+
+    -o-transition-duration: 0.3s;
+
+    -webkit-transition-duration: 0.3s;
+
+    transition-duration: 0.3s;
+
+    -moz-transition-timing-function: ease-in-out;
+
+    -o-transition-timing-function: ease-in-out;
+
+    -webkit-transition-timing-function: ease-in-out;
+
+    transition-timing-function: ease-in-out
+
+}
+
+
+#advanced-options .btn-apply:hover,
+
+#advanced-options .btn-clear:hover {
+
+  background-color: rgba(64, 101, 186, 0.8);
+
+}
+
+
+
+/**
+
+ * General Styles
+
+ */
+
+
+body {
+
+    margin: 0 0 0 0;
+
+    text-align: center;
+
+    font-family: Verdana, Arial;
+
+    font-size: 11px;
+
+}
+
+
+td {
+
+    line-height: 1.5em;
+
+}
+
+
+a {
+
+    color: #1d439b;
+
+    text-decoration: none;
+
+}
+
+
+#footer-block {
+
+    padding: 15px 0;
+
+    background-color: #2E51A2;
+
+    color: #FFFFFF;
+
+    font-family: Avenir, "lucida grande", tahoma, verdana, arial, sans-serif;
+
+}
+
+
+#copyright {
+
+    font-size: 12px;
+
+    color: #9caed9;
+
+    padding-top: 3px;
+
+    text-align: center;
+
+}
+
+
+#recaptcha-terms {
+
+    font-size: 8px;
+
+    margin-top: 4px;
+
+    color: #9caed9;
+
+}
+
+#recaptcha-terms a {
+
+    color: #9caed9;
+
+}
+
+#recaptcha-terms a:hover {
+
+    color: #e5eaf5;
+
+}
+
+
+.grecaptcha-badge {
+
+    visibility: hidden;
+
+}
+
+
+/*
+
+ * Header
+
+ */
+
+.header a {
+
+    font-weight: bold;
+
+    color: #fff;
+
+}
+
+.header a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+.header {
+
+    position: relative;
+
+    color: #fff;
+
+    display: block;
+
+    width: 1060px;
+
+    height: 70px;
+
+    margin: 0 auto
+
+}
+
+
+.header .header-title {
+
+    position: absolute;
+
+    top: 21px;
+
+    background-image: url("/img/pc/ownlist/logo_mal.png");
+
+    background-position: left top;
+
+    background-repeat: no-repeat;
+
+    background-size: auto 36px;
+
+    display: block;
+
+    width: 240px;
+
+    height: 36px;
+
+    text-indent: -9999px;
+
+    overflow: hidden
+
+}
+
+
+.header .header-menu {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 4px
+
+}
+
+.header .header-menu.other {
+
+    top: 18px;
+
+}
+
+
+.header .header-menu .btn-menu {
+
+    display: block;
+
+    text-align: right;
+
+    font-size: 16px;
+
+}
+
+
+.header .header-menu .header-info {
+
+    font-size: 1.0em;
+
+    margin-top: 6px;
+
+    margin-right: 15px;
+
+    text-align: right;
+
+}
+
+
+.header .username {
+
+    font-weight: bold;
+
+}
+
+
+.header .header-menu .list-menu {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: -4px;
+
+    background-color: #ffffff;
+
+    display: none;
+
+    border: #2E51A2 1px solid;
+
+    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0 0 10px;
+
+    z-index: 1;
+
+}
+
+
+.header .header-menu .list-menu .icon-menu {
+
+    display: block;
+
+    width: 150px;
+
+    height: 30px;
+
+    color: #2E51A2;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    -moz-transition-property: all;
+
+    -o-transition-property: all;
+
+    -webkit-transition-property: all;
+
+    transition-property: all;
+
+    -moz-transition-duration: 0.3s;
+
+    -o-transition-duration: 0.3s;
+
+    -webkit-transition-duration: 0.3s;
+
+    transition-duration: 0.3s;
+
+    -moz-transition-timing-function: ease-in-out;
+
+    -o-transition-timing-function: ease-in-out;
+
+    -webkit-transition-timing-function: ease-in-out;
+
+    transition-timing-function: ease-in-out
+
+}
+
+
+.header .header-menu .list-menu .icon-menu:hover {
+
+    background-color: #e1e7f5
+
+}
+
+
+.header .header-menu .list-menu .icon-menu svg.icon {
+
+    position: absolute;
+
+    fill: #2E51A2;
+
+    left: 12px;
+
+    top: 4px;
+
+}
+
+
+.header .header-menu .list-menu .icon-menu .text {
+
+    position: absolute;
+
+    left: 52px;
+
+    top: 6px;
+
+}
+
+
+/**
+
+ * Floating Menu
+
+ */
+
+.list-menu-float {
+
+    position: fixed;
+
+    display: block;
+
+    top: 20%;
+
+    width: 50px;
+
+    border: #EBEBEB 1px solid;
+
+    z-index: 2
+
+}
+
+
+.list-menu-float .icon-menu {
+
+    position: relative;
+
+    background-color: #f6f6f6;
+
+    display: block;
+
+    width: 50px;
+
+    height: 50px;
+
+    opacity: 1;
+
+    -moz-transition-property: all;
+
+    -o-transition-property: all;
+
+    -webkit-transition-property: all;
+
+    transition-property: all;
+
+    -moz-transition-duration: 0.3s;
+
+    -o-transition-duration: 0.3s;
+
+    -webkit-transition-duration: 0.3s;
+
+    transition-duration: 0.3s;
+
+    -moz-transition-timing-function: ease-in-out;
+
+    -o-transition-timing-function: ease-in-out;
+
+    -webkit-transition-timing-function: ease-in-out;
+
+    transition-timing-function: ease-in-out;
+
+}
+
+
+/* SVG */
+
+.list-menu-float .icon-menu svg.icon {
+
+    position: absolute;
+
+    fill: #323232;
+
+}
+
+.list-menu-float .icon-menu:hover svg.icon {
+
+    position: absolute;
+
+    fill: #ffffff;
+
+}
+
+
+.list-menu-float .icon-menu.profile {
+
+    background-size: cover;
+
+}
+
+
+.list-menu-float .icon-menu.quick-add {}
+
+.list-menu-float .icon-menu.quick-add svg.icon-quick-add {
+
+    left: 13px;
+
+    top: 12px;
+
+}
+
+
+.list-menu-float .icon-menu.anime-list {}
+
+.list-menu-float .icon-menu.anime-list svg.icon-anime-list {
+
+    left: 13px;
+
+    top: 12px;
+
+}
+
+
+.list-menu-float .icon-menu.manga-list {}
+
+.list-menu-float .icon-menu.manga-list svg.icon-manga-list {
+
+    left: 13px;
+
+    top: 12px;
+
+}
+
+
+.list-menu-float .icon-menu.history {}
+
+.list-menu-float .icon-menu.history svg.icon-history {
+
+    left: 13px;
+
+    top: 12px;
+
+}
+
+
+.list-menu-float .icon-menu.export {}
+
+.list-menu-float .icon-menu.export svg.icon-export {
+
+    left: 13px;
+
+    top: 12px;
+
+}
+
+
+.list-menu-float .icon-menu.login {}
+
+.list-menu-float .icon-menu.login svg.icon-login {
+
+    left: 13px;
+
+    top: 12px;
+
+}
+
+
+.list-menu-float .icon-menu.logout {}
+
+.list-menu-float .icon-menu.logout svg.icon-logout {
+
+    left: 13px;
+
+    top: 14px;
+
+}
+
+
+.list-menu-float .icon-menu.setting {}
+
+.list-menu-float .icon-menu.setting svg.icon-setting {
+
+    left: 13px;
+
+    top: 13px;
+
+}
+
+
+.list-menu-float .icon-menu .text {
+
+    position: absolute;
+
+    top: 14px;
+
+    left: 50px;
+
+    width: 0;
+
+    display: inline-block;
+
+    color: #ffffff;
+
+    font-size: 1.4em;
+
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    opacity: 0;
+
+    -moz-transition-property: all;
+
+    -o-transition-property: all;
+
+    -webkit-transition-property: all;
+
+    transition-property: all;
+
+    -moz-transition-duration: 0.3s;
+
+    -o-transition-duration: 0.3s;
+
+    -webkit-transition-duration: 0.3s;
+
+    transition-duration: 0.3s;
+
+    -moz-transition-timing-function: ease-in-out;
+
+    -o-transition-timing-function: ease-in-out;
+
+    -webkit-transition-timing-function: ease-in-out;
+
+    transition-timing-function: ease-in-out
+
+}
+
+
+.list-menu-float .icon-menu:not(.profile):hover {
+
+    background-color: #4065BA;
+
+    width: 145px;
+
+}
+
+
+.list-menu-float .icon-menu:hover .text {
+
+    width: 94px;
+
+    opacity: 1
+
+}
+
+
+/* setting */
+
+.list-menu-float .icon-menu.setting .text {
+
+    top: 0px;
+
+    width: 0px;
+
+    height: 100px;
+
+    opacity: 0;
+
+    -moz-transition-property: all;
+
+    -o-transition-property: all;
+
+    -webkit-transition-property: all;
+
+    transition-property: all;
+
+    -moz-transition-duration: 0.3s;
+
+    -o-transition-duration: 0.3s;
+
+    -webkit-transition-duration: 0.3s;
+
+    transition-duration: 0.3s;
+
+    -moz-transition-timing-function: ease-in-out;
+
+    -o-transition-timing-function: ease-in-out;
+
+    -webkit-transition-timing-function: ease-in-out;
+
+    transition-timing-function: ease-in-out
+
+}
+
+.list-menu-float .icon-menu.setting:hover .text {
+
+    top: 0px;
+
+    width: 114px;
+
+    height: 100px;
+
+    opacity: 1
+
+}
+
+
+.list-menu-float .icon-menu.setting .text .link-list-setting,
+
+.list-menu-float .icon-menu.setting .text .link-style-setting {
+
+    display: block;
+
+    opacity: 0;
+
+}
+
+
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting,
+
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting {
+
+    position: absolute;
+
+    background-color: #4065BA;
+
+    display: block;
+
+    width: 110px;
+
+    height: 50px;
+
+    line-height: 50px;
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    opacity: 1;
+
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting {
+
+    top: 0px;
+
+}
+
+
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting {
+
+    border-top: #EBEBEB 1px solid;
+
+    top: 50px;
+
+}
+
+
+
+/**
+
+ * List Container
+
+ */
+
+
+.list-container {
+
+    position: relative;
+
+    background-color: #ffffff;
+
+    border: #EBEBEB 1px solid;
+
+    width: 1058px;
+
+    margin-bottom: 0;
+
+    margin-right: auto;
+
+    margin-left: auto;
+
+    text-align: left;
+
+}
+
+
+/**
+
+ * List Container - Cover Block
+
+ */
+
+.cover-block {
+
+    display: block;
+
+    width: 1024px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+}
+
+
+.cover-block .image-container {
+
+    display: table-cell;
+
+    padding-top: 16px;
+
+    width: 1024px;
+
+}
+
+
+.cover-block .image-container.hide {
+
+    display: none;
+
+}
+
+
+.cover-block .image-container img {
+
+    max-width: 1024px;
+
+}
+
+
+/* setting icon */
+
+.cover-block .image-container .btn-list-setting {
+
+    display: none;
+
+}
+
+
+.cover-block .image-container:hover .btn-list-setting {
+
+    display: block;
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 28px;
+
+    padding: 8px;
+
+    border: rgba(255,255,255,0) 1px solid;
+
+    font-size: 14px;
+
+    color: #ffffff;
+
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+
+}
+
+
+.cover-block .image-container .btn-list-setting:hover {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 28px;
+
+    background-color: rgba(0,0,0,0.6);
+
+    padding: 8px;
+
+    border: #ffffff 1px solid;
+
+    -moz-box-shadow: 0 0 4px #000000;
+
+    -webkit-box-shadow: 0 0 4px #000000;
+
+    -o-box-shadow: 0 0 4px #000000;
+
+    -ms-box-shadow: 0 0 4px #000000;
+
+    box-shadow: 0 0 4px #000000;
+
+    font-size: 14px;
+
+    color: #ffffff;
+
+    text-shadow: #323232 1px 1px 1px;
+
+}
+
+
+.cover-block .image-container .btn-list-setting .fa-camera {
+
+    font-size: 16px;
+
+    -moz-text-shadow: #000000 1px 1px 3px;
+
+    -webkit-text-shadow: #000000 1px 1px 3px;
+
+    -o-text-shadow: #000000 1px 1px 3px;
+
+    -ms-text-shadow: #000000 1px 1px 3px;
+
+    text-shadow: #000000 1px 1px 3px;
+
+    -ms-filter:"progid:DXImageTransform.Microsoft.DropShadow(color=#000000,offx=1,offy=1)";
+
+}
+
+
+.cover-block .image-container .btn-list-setting .icon-plus-circle {
+
+    position: absolute;
+
+    top: 4px;
+
+    left: 18px;
+
+    background-color: rgba(0,0,0,0.6);
+
+    border-radius: 50%;
+
+    -moz-box-shadow: -1px 1px 0px 0px #323232;
+
+    -webkit-box-shadow: -1px 1px 0px 0px #323232;
+
+    -o-box-shadow: -1px 1px 0px 0px #323232;
+
+    -ms-box-shadow: -1px 1px 0px 0px #323232;
+
+    box-shadow: -1px 1px 0px 0px #323232;
+
+    font-size: 10px;
+
+}
+
+
+.cover-block .image-container .btn-list-setting .text {
+
+  display: none;
+
+}
+
+
+.cover-block .image-container .btn-list-setting:hover .text {
+
+  display: inline-block;;
+
+  margin-left: 4px;
+
+}
+
+
+/**
+
+ * List Container - Status Menu
+
+ */
+
+.status-menu-container {
+
+    width: 1058px;
+
+    height: 46px;
+
+    background-color: #FFF;
+
+    border-bottom: #EBEBEB 1px solid;
+
+    z-index: 1
+
+}
+
+
+.status-menu-container.fixed {
+
+    position: fixed;
+
+    display: block;
+
+    top: 0;
+
+}
+
+
+.status-menu-container.fixed + div.list-block {
+
+    margin-top: 62px;
+
+}
+
+
+.status-menu-container .status-menu {
+
+    display: table;
+
+    margin: 0 auto;
+
+    border-collapse: separate;
+
+    border-spacing: 40px 0;
+
+}
+
+
+.status-menu-container .status-menu .status-button {
+
+    position: relative;
+
+    display: table-cell;
+
+    padding: 12px 0;
+
+    margin: 0;
+
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    font-size: 1.6em;
+
+    color: #9B9B9B;
+
+}
+
+
+.status-menu-container .status-menu .status-button.on {
+
+    color: #787878;
+
+    font-weight: bold;
+
+}
+
+
+.status-menu-container .status-menu .status-button:after {
+
+    position: absolute;
+
+    bottom: 0px;
+
+    left: 0px;
+
+    background-color: #4065BA;
+
+    display: block;
+
+    width: 100%;
+
+    height: 4px;
+
+    content: '';
+
+    opacity: 0;
+
+    -moz-transition-property: all;
+
+    -o-transition-property: all;
+
+    -webkit-transition-property: all;
+
+    transition-property: all;
+
+    -moz-transition-duration: 0.3s;
+
+    -o-transition-duration: 0.3s;
+
+    -webkit-transition-duration: 0.3s;
+
+    transition-duration: 0.3s;
+
+    -moz-transition-timing-function: ease-in-out;
+
+    -o-transition-timing-function: ease-in-out;
+
+    -webkit-transition-timing-function: ease-in-out;
+
+    transition-timing-function: ease-in-out;
+
+}
+
+
+.status-menu-container .status-menu .status-button.on:after, .status-menu .status-button:hover:after {
+
+    opacity: 1
+
+}
+
+
+/**
+
+ * List Container - Status Menu - Search
+
+ */
+
+.status-menu-container .search-container {
+
+    position: absolute;
+
+    right: 18px;
+
+}
+
+.status-menu-container .search-container #search-button {
+
+    display: inline-block;
+
+    height: 22px;
+
+    margin-top: 15px;
+
+    color: #787878;
+
+    font-size: 1.6em;
+
+    vertical-align: middle;
+
+}
+
+
+.status-menu-container .search-container #search-box {
+
+    display: inline-block;
+
+    width: 0;
+
+    height: 22px;
+
+    overflow: hidden;
+
+    margin-top: 13px;
+
+    -webkit-transition: width 0.3s;
+
+    -moz-transition: width 0.3s;
+
+    transition: width 0.3s;
+
+    -webkit-backface-visibility: hidden;
+
+    vertical-align: middle;
+
+}
+
+
+.status-menu-container .search-container #search-box.open {
+
+    display: inline-block;
+
+    width: 100px;
+
+}
+
+
+.status-menu-container .search-container #search-box input {
+
+    width: 100%;
+
+    height: 100%;
+
+    box-sizing: border-box;
+
+}
+
+
+/**
+
+ * List Container - List Block
+
+ */
+
+.list-block {
+
+    margin-top: 16px;
+
+    min-height: 600px;
+
+    padding: 0
+
+}
+
+
+.list-unit {
+
+    display: block;
+
+    margin: 0 auto;
+
+    width: 1024px
+
+}
+
+
+/**
+
+ * List Container - List Status Title (with Stats)
+
+ */
+
+.list-unit .list-status-title {
+
+    position: relative;
+
+    display: table;
+
+    background-color: #4065BA;
+
+    width: 1024px;
+
+    height: 38px
+
+}
+
+
+.list-unit .list-status-title .text {
+
+    display: table-cell;
+
+    width: 1024px;
+
+    height: 38px;
+
+    font-size: 2.0em;
+
+    color: #FFF;
+
+    font-weight: bold;
+
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+
+    text-align: center;
+
+    vertical-align: middle
+
+}
+
+
+.list-unit .list-status-title .stats {
+
+    position: absolute;
+
+    height: 38px;
+
+    line-height: 38px;
+
+    right: 4px;
+
+}
+
+
+.list-unit .list-status-title .stats a {
+
+    margin-right: 8px;
+
+    color: #FFF;
+
+}
+
+
+.list-unit .list-status-title .stats a.filterd {
+
+    text-shadow: 0px 0px 2px #FFF;
+
+}
+
+
+.list-unit .list-stats {
+
+    display: none;
+
+    background-color: #4065BA;
+
+    width: 1024px;
+
+    height: 30px;
+
+    line-height: 30px;
+
+    color: #FFF;
+
+    text-align: center;
+
+}
+
+
+
+/**
+
+ * List Container - List Table
+
+ */
+
+
+.list-table {
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    border-collapse: collapse;
+
+    border: #EBEBEB 1px solid;
+
+}
+
+
+.list-table > tbody:nth-of-type(2n+1) {
+
+    background-color: #fcfcfc;
+
+}
+
+
+
+/**
+
+ * List Container - List Table - Header
+
+ */
+
+
+.list-table .list-table-header .header-title {
+
+    background: #F6F6F6 url("/img/pc/ownlist/bar-table-header.png") no-repeat right 7px / 1px 22px;
+
+    display: table-cell;
+
+    border-bottom: #EBEBEB 1px solid;
+
+    height: 36px;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+}
+
+
+.list-table .list-table-header .header-title:last-child {
+
+    background-image: none;
+
+}
+
+
+.list-table .list-table-header .header-title.status {
+
+    background-image: none;
+
+    width: 4px
+
+}
+
+
+.list-table .list-table-header .header-title.number {
+
+    width: 30px
+
+}
+
+
+.list-table .list-table-header .header-title.image {
+
+    width: 66px
+
+}
+
+
+.list-table .list-table-header .header-title.title {
+
+    padding-left: 8px;
+
+    text-align: left
+
+}
+
+
+.list-table .list-table-header .header-title.score {
+
+    width: 65px
+
+}
+
+
+.list-table .list-table-header .header-title.type {
+
+    width: 60px
+
+}
+
+
+.list-table .list-table-header .header-title.progress {
+
+    width: 90px
+
+}
+
+
+.list-table .list-table-header .header-title.chapters {
+
+    width: 90px
+
+}
+
+
+.list-table .list-table-header .header-title.volumes {
+
+    width: 90px
+
+}
+
+
+.list-table .list-table-header .header-title.tags {
+
+    width: 120px
+
+}
+
+
+.list-table .list-table-header .header-title.rated {
+
+    width: 70px
+
+}
+
+
+.list-table .list-table-header .header-title.started {
+
+    width: 110px
+
+}
+
+
+.list-table .list-table-header .header-title.finished {
+
+    width: 110px
+
+}
+
+
+.list-table .list-table-header .header-title.days {
+
+    width: 45px
+
+}
+
+
+.list-table .list-table-header .header-title.storage {
+
+    width: 75px
+
+}
+
+
+.list-table .list-table-header .header-title.retail {
+
+    width: 65px;
+
+}
+
+
+.list-table .list-table-header .header-title.priority {
+
+    width: 70px
+
+}
+
+
+.list-table .list-table-header .header-title .link {
+
+    font-size: 11px;
+
+    color: #323232;
+
+    text-decoration: none
+
+}
+
+
+.list-table .list-table-header .header-title .link.sort {
+
+    position: relative;
+
+    display: inline-block;
+
+    color: #323232;
+
+    white-space: nowrap;
+
+    -moz-transition-property: all;
+
+    -o-transition-property: all;
+
+    -webkit-transition-property: all;
+
+    transition-property: all;
+
+    -moz-transition-duration: 0.3s;
+
+    -o-transition-duration: 0.3s;
+
+    -webkit-transition-duration: 0.3s;
+
+    transition-duration: 0.3s;
+
+    -moz-transition-timing-function: ease-in-out;
+
+    -o-transition-timing-function: ease-in-out;
+
+    -webkit-transition-timing-function: ease-in-out;
+
+    transition-timing-function: ease-in-out
+
+}
+
+
+.list-table .list-table-header .header-title .link.sort:hover {
+
+    color: #2556c6
+
+}
+
+
+.list-table .list-table-header .header-title .sort-icon {
+
+    color: #1d439b;
+
+}
+
+
+
+/**
+
+ * List Container - List Table - Items
+
+ */
+
+
+.list-table .list-table-data .data {
+
+    display: table-cell;
+
+    padding: 4px 0;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    border-bottom: #EBEBEB 1px solid
+
+}
+
+
+.list-table .list-table-data a:not(.edit-disabled):hover {
+
+    text-decoration: underline;
+
+}
+
+
+.list-table .list-table-data a.edit-disabled {
+
+    cursor: text;
+
+    color: black;
+
+}
+
+
+.list-table .list-table-data .tags .edit {
+
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #2db039;
+
+    font-size: 10px;
+
+    font-family: 'Helvetica neue', Helvetica, "lucida grande", tahoma, verdana, arial, sans-serif;
+
+}
+
+
+.list-table .list-table-data .tags .edit:hover {
+
+    color: green !important;
+
+}
+
+
+.list-table .list-table-data .tags textarea {
+
+    box-sizing: border-box;
+
+    width: 100%;
+
+    height: 60px;
+
+}
+
+
+.list-table .list-table-data .data.image a {
+
+    display: inline-block;
+
+}
+
+.list-table .list-table-data .data.image .image {
+
+    width: 48px;
+
+    height: 68px;
+
+    border: #EBEBEB 1px solid
+
+}
+
+
+.list-table .list-table-data .data.title {
+
+    padding-left: 8px;
+
+    text-align: left;
+
+    word-wrap: break-word
+
+}
+
+
+.list-table .list-table-data .data.title .link {
+
+    font-size: 1.1em;
+
+    font-weight: bold
+
+}
+
+
+.list-table .list-table-data .data.title .rewatching, .list-table .list-table-data .data.title .rereading, .list-table .list-table-data .data.title .content-status {
+
+    color: #BABABA;
+
+    font-size: 0.9em
+
+}
+
+
+.list-table .list-table-data .data.score .link {
+
+    font-size: 1.1em;
+
+    font-weight: bold
+
+}
+
+
+.list-table .list-table-data .data.title .add-edit-more {
+
+    float: right;
+
+    margin-right: 10px;
+
+    font-size: 0.9em;
+
+}
+
+
+.list-table .list-table-data .data.title .more {
+
+    position: relative;
+
+}
+
+
+.list-table .more-info {
+
+    display: none;
+
+    border-bottom: #EBEBEB 1px solid;
+
+}
+
+
+.list-table .more-info .more-content {
+
+    padding: 10px;
+
+}
+
+
+.list-table .list-table-data .data.tags {
+
+    word-wrap: break-word
+
+}
+
+
+.list-table .list-table-data .data.status {
+
+    width: 4px
+
+}
+
+
+.list-table .list-table-data .data.status .text {
+
+    display: none
+
+}
+
+
+.list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status.watching {
+
+    background-color: #2db039
+
+}
+
+
+.list-table .list-table-data .data.status.plantoread, .list-table .list-table-data .data.status.plantowatch {
+
+    background-color: #c3c3c3
+
+}
+
+
+.list-table .list-table-data .data.status.completed {
+
+    background-color: #26448f
+
+}
+
+
+.list-table .list-table-data .data.status.onhold {
+
+    background-color: #f1c83e
+
+}
+
+
+.list-table .list-table-data .data.status.dropped {
+
+    background-color: #a12f31
+
+}
+
+
+.list-table .list-table-data .data.title {
+
+    padding-left: 8px;
+
+    text-align: left
+
+}
+
+
+.list-table .list-table-data .data.title .notes {
+
+  width: 85%;
+
+}
+
+
+.list-table .list-table-data .data.title .notes .text {
+
+  color: #787878;
+
+}
+
+
+.list-table .list-table-data .data.title .notes textarea {
+
+  width: 100%;
+
+}
+
+
+.list-table .list-table-data .data.title .notes .edit {
+
+  color: #787878;
+
+  font-size: 10px;
+
+}
+
+
+.list-unit .loading-space {
+
+    margin: 8px;
+
+    height: 20px;
+
+    font-size: 20px;
+
+    text-align: center;
+
+}
+
+
+/*
+
+    Night Shift Layout by Cateinya
+
+*/
+
+
+/* GENERATED STUFF */
+
+
+/* generated information (copy your generated CSS below) */
+
+
+
+
+/* COVER AREA */
+
+
+.list-block {
+
+    /* variables used in calc (explicit names), change both values to 0px to hide the covers */
+
+    --height-img: 272px;
+
+    --width-img: 192px;
+
+}
+
+
+/* BACKGROUND */
+
+
+body {
+
+    background-attachment: fixed;
+
+    background-color: var(--main-background) !important;
+
+    background-image: none;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+}
+
+
+:root {
+
+    --text-color: #fff;
+
+    --secondary-text-color: #ffffffde;
+
+    --disabled-text-color: #fff9;
+
+    
+
+    --airing-color: #000;
+
+    --airing-background: #ff0;
+
+    
+
+    --link-color: #fff;
+
+    --link-color-hover: #ffffffBF;
+
+    --link-background-hover: #313131BF;
+
+    --secondary-link-color: #fff9;
+
+    --secondary-link-color-hover: #fff;
+
+    --secondary-link-background-hover: #313131;
+
+
+    --main-background: #424242;
+
+    --menu-background: #272727;
+
+    --content-background: #27272799;
+
+    --content-border: #aaa;
+
+    
+
+    --disabled-window-background: #27272761;
+
+    
+
+    --text-input-background: #272727DE;
+
+    --more-background: #272727DE;
+
+    
+
+    --height-text-section: 272px;
+
+    --height-top-section: 40px;
+
+    --height-bottom-section: 20px;
+
+    --width-text-section: 300px;
+
+}
+
+
+/* LINKS */
+
+
+a {
+
+    text-decoration: none !important;
+
+}
+
+
+/* HEADER */
+
+
+.header {
+
+    margin-top: 50px;
+
+    width: auto;
+
+}
+
+
+@media screen and (max-width: 775px) {
+
+    .header {
+
+        margin-top: 80px;
+
+    }
+
+}
+
+
+.header .header-title {
+
+    /* uncomment to force white MAL logo */
+
+    /*background-image: url(https://myanimelist.net/img/pc/ownlist/logo_mal.png);*/
+
+    filter: drop-shadow(1px 1px 1px black);
+
+    margin-left: 15px;
+
+}
+
+
+.header .header-menu {
+
+    filter: drop-shadow(1px 1px 1px black);
+
+    padding-right: 15px;
+
+}
+
+
+.header .header-menu .btn-menu,
+
+.header .header-menu .header-info {
+
+    color: var(--text-color) !important;
+
+}
+
+
+.header .header-menu .btn-menu a,
+
+.header .header-menu .header-info a {
+
+    color: var(--link-color) !important;
+
+}
+
+
+.header .header-menu .btn-menu a:hover,
+
+.header .header-menu .header-info a:hover {
+
+    color: var(--link-color-hover) !important;
+
+}
+
+
+.header .header-menu .btn-menu {
+
+    display: inline;
+
+}
+
+
+.header .header-menu .btn-menu #header-menu-button {
+
+    font-weight: normal;
+
+    pointer-events: none;
+
+}
+
+
+.header .header-menu .btn-menu .fa-angle-down:before {
+
+    content: "-";
+
+}
+
+
+.header .header-menu .header-info {
+
+    display: block;
+
+    position: absolute;
+
+    text-align: center;
+
+    width: 100%;
+
+}
+
+
+#header-menu-dropdown {
+
+    display: inline;
+
+    position: unset;
+
+}
+
+
+#header-menu-dropdown .icon-menu {
+
+    background: none !important;
+
+    display: inline;
+
+    transition: none !important;
+
+}
+
+
+#header-menu-dropdown .icon-menu:before {
+
+    font-weight: bold;
+
+}
+
+
+#header-menu-dropdown .icon-menu.manga-list:before {
+
+    content: "View Manga List";
+
+}
+
+
+#header-menu-dropdown .icon-menu.anime-list:before {
+
+    content: "View Anime List";
+
+}
+
+
+.header .header-menu .icon-menu .icon {
+
+    fill: var(--link-color) !important;
+
+    position: unset !important;
+
+}
+
+
+.header .header-menu .icon-menu:hover .icon {
+
+    fill: var(--link-color-hover) !important;
+
+}
+
+
+.header .header-menu .icon-menu span {
+
+    display: none !important;
+
+}
+
+
+/* div to other list */
+
+.header .header-menu .list-menu {
+
+    background-color: transparent;
+
+    border: none;
+
+    box-shadow: none;
+
+}
+
+
+/* link to other list */
+
+.header .header-menu .list-menu .icon-menu {
+
+    color: var(--link-color) !important;
+
+}
+
+
+.header .header-menu .list-menu .icon-menu:hover {
+
+    color: var(--link-color-hover) !important;
+
+}
+
+
+.header-info {
+
+    display: inline-block;
+
+}
+
+
+/* LIST MENU */
+
+
+.header:before {
+
+    /* menu icon for click simulation */
+
+    box-sizing: border-box;
+
+    color: var(--link-color);
+
+    content: "";
+
+    cursor: pointer;
+
+    font-family: FontAwesome;
+
+    font-size: 25px;
+
+    height: 46px;
+
+    left: 0;
+
+    padding: 7px;
+
+    position: fixed;
+
+    top: 0;
+
+    width: 46px;
+
+    z-index: 98;
+
+}
+
+
+.header:active:before {
+
+    pointer-events: none;
+
+}
+
+
+.list-menu-float {
+
+    background: var(--menu-background);
+
+    border: none;
+
+    bottom: 0;
+
+    display: block;
+
+    flex-direction: column;
+
+    margin-left: -300px;
+
+    overflow: hidden;
+
+    top: 0 !important;
+
+    transition: margin 0.2s ease 0s, z-index 0s ease 0s;
+
+    width: 300px;
+
+    z-index: 97;
+
+}
+
+
+.list-menu-float:before {
+
+    box-sizing: border-box;
+
+    color: var(--link-color);
+
+    content: "\f0c9";
+
+    cursor: pointer;
+
+    font-family: FontAwesome;
+
+    font-size: 25px;
+
+    height: 46px;
+
+    left: 0;
+
+    padding: 7px;
+
+    position: fixed;
+
+    top: 0;
+
+    transition: left 0.2s ease 0s, background 0.2s ease 0s;
+
+    width: 46px;
+
+}
+
+
+.list-menu-float:hover {
+
+    margin-left: 0px;
+
+    z-index: 99;
+
+}
+
+
+.list-menu-float:hover:before {
+
+    background: var(--disabled-window-background);
+
+    content: "";
+
+    height: 100%;
+
+    left: 300px;
+
+    width: 100%;
+
+}
+
+
+.list-menu-float:active:before {
+
+    cursor: initial;
+
+    pointer-events: none;
+
+    transition: 0s;
+
+}
+
+
+.list-menu-float .icon-menu,
+
+.list-menu-float form {
+
+    /* All list menu buttons */
+
+    transition: none;
+
+}
+
+
+.list-menu-float .icon-menu:not(.profile),
+
+.list-menu-float form {
+
+    background: transparent !important;
+
+    width: 100% !important;
+
+}
+
+
+.list-menu-float .icon-menu:not(.profile):hover,
+
+.list-menu-float form:hover {
+
+    background: var(--secondary-link-background-hover) !important;
+
+}
+
+
+.list-menu-float .icon-menu .text {
+
+    /* text display */
+
+    left: 110px;
+
+    opacity: 1 !important;
+
+    transition: none;
+
+    width: auto !important;
+
+}
+
+
+.list-menu-float .icon {
+
+    /* All list menu icons */
+
+    fill: var(--secondary-link-color) !important;
+
+    left: 75px !important;
+
+}
+
+
+.list-menu-float .icon-menu .text,
+
+.list-menu-float .icon-menu.setting a {
+
+    color: var(--secondary-link-color) !important;
+
+}
+
+
+.list-menu-float .icon-menu:hover .text,
+
+.list-menu-float .icon-menu.setting .text a:hover {
+
+    color: var(--secondary-link-color-hover) !important;
+
+}
+
+
+.list-menu-float .icon-menu:hover .icon {
+
+    fill: var(--secondary-link-color-hover) !important;
+
+}
+
+
+.list-menu-float .icon-menu.profile {
+
+    border: 2px solid var(--text-color);
+
+    border-radius: 50%;
+
+    height: 80px;
+
+    left: 15px;
+
+    pointer-events: none;
+
+    position: absolute;
+
+    top: 15px;
+
+    width: 80px;
+
+}
+
+
+.icon-menu.profile::before {
+
+    color: var(--secondary-text-color);
+
+    content: attr(href);
+
+    display: block;
+
+    font-size: 16px;
+
+    left: 100%;
+
+    margin-left: 15px;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    position: absolute;
+
+    text-align: left;
+
+    text-indent: -256px;
+
+    top: 12px;
+
+    width: 180px;
+
+}
+
+
+.icon-menu.profile::after {
+
+    border-top: 1px solid var(--text-color);
+
+    content: "View my profile";
+
+    color: var(--link-color);
+
+    display: block;
+
+    font-weight: bold;
+
+    left: 100%;
+
+    margin-left: 5px;
+
+    padding-bottom: 10px;
+
+    padding-left: 10px;
+
+    padding-top: 7px;
+
+    pointer-events: all;
+
+    position: absolute;
+
+    text-align: left;
+
+    top: 40px;
+
+    width: 180px;
+
+}
+
+
+.icon-menu.profile:hover::after {
+
+    color: var(--link-color-hover);
+
+}
+
+
+.list-menu-float .icon-menu.quick-add {
+
+    margin-top: 115px;
+
+}
+
+
+/* logout */
+
+
+/* when own list */
+
+
+.icon-logout {
+
+    top: 16px !important;
+
+}
+
+
+.list-menu-float .icon-menu.setting {
+
+    opacity: 1 !important;
+
+}
+
+
+/* Settings */
+
+
+.list-menu-float .icon-menu.setting .text {
+
+    /* setting button (owner only) */
+
+    height: 50px !important;
+
+    opacity: 1 !important;
+
+    text-align: left;
+
+    width: 110px !important;
+
+}
+
+
+.list-menu-float .icon-menu.setting .text a {
+
+    background: transparent !important;
+
+    border: none !important;
+
+    height: auto !important;
+
+    line-height: initial !important;
+
+    opacity: 1 !important;
+
+    padding-bottom: 10px;
+
+    position: relative !important;
+
+    top: 0 !important;
+
+}
+
+
+/* LIST CONTAINER */
+
+
+#list-container {
+
+    background-color: transparent !important;
+
+    border: none;
+
+    width: 100%;
+
+}
+
+
+/* IMAGE BLOCK */
+
+
+.cover-block .image-container {
+
+    /* fix cover edit button not reachable */
+
+    position: relative;
+
+}
+
+
+.cover-block .image-container .btn-list-setting {
+
+    color: var(--link-color);
+
+}
+
+
+.cover-block .image-container .btn-list-setting:hover {
+
+    color: var(--link-color-hover);
+
+}
+
+
+/* STATUS MENU */
+
+
+#status-menu {
+
+    background: var(--menu-background);
+
+    border-bottom: none;
+
+    box-shadow: 5px 5px 5px #0000005c;
+
+    height: auto;
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    z-index: 3;
+
+}
+
+
+.status-menu {
+
+    /* category menu */
+
+    display: flex !important;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    margin-left: 50px !important;
+
+    margin-right: 150px !important;
+
+}
+
+
+.status-menu .status-button {
+
+    /* category button */
+
+    color: var(--secondary-link-color) !important;
+
+    padding: 10px 10px !important;
+
+}
+
+
+.status-menu .status-button.on,
+
+.status-menu .status-button:hover {
+
+    color: var(--secondary-link-color-hover) !important;
+
+    background: var(--secondary-link-background-hover);
+
+}
+
+
+.status-menu .status-button::after {
+
+    display: none !important;
+
+}
+
+
+/* SEARCH */
+
+
+.status-menu-container .search-container #search-button {
+
+    color: var(--link-color);
+
+}
+
+
+.status-menu-container .search-container #search-button:hover {
+
+    color: var(--link-color-hover);
+
+}
+
+
+.status-menu-container .search-container #search-box input {
+
+    background: var(--text-input-background);
+
+    border: none;
+
+    border-bottom: 1px solid var(--content-border);
+
+    color: var(--text-color);
+
+    outline: none !important;
+
+}
+
+
+/* STATUS TITLE */
+
+
+.list-unit .list-status-title {
+
+    background: transparent;
+
+    margin: 0 auto;
+
+    width: auto;
+
+}
+
+
+.list-unit .list-status-title .text {
+
+    color: var(--text-color) !important;
+
+    filter: drop-shadow(1px 2px 2px black);
+
+    font-size: 65px;
+
+}
+
+
+.list-unit .list-status-title .stats a {
+
+    color: var(--link-color) !important;
+
+    filter: drop-shadow(1px 2px 2px black);
+
+}
+
+
+.list-unit .list-status-title .stats a:hover {
+
+    color: var(--link-color-hover) !important;
+
+}
+
+
+/* STATS */
+
+
+.stats {
+
+    right:12px !important;
+
+}
+
+
+.list-unit .list-stats {
+
+    /* Stat bar */
+
+    background-color: transparent;
+
+    color: var(--text-color) !important;
+
+    filter: drop-shadow(1px 2px 2px black);
+
+    font-size: 14px;
+
+    margin: 0 auto;
+
+}
+
+
+/* FILTER */
+
+
+#advanced-options {
+
+    background: var(--menu-background) none repeat scroll 0% 0%;
+
+    border: unset;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    color: var(--text-color);
+
+    /* fix for window out of screen*/
+
+    position: fixed;
+
+}
+
+
+#advanced-options .sort-widget input[type="radio"]:checked + label {
+
+    background-color: var(--link-background-hover);
+
+    border: 1px solid var(--content-border);
+
+}
+
+
+#advanced-options .btn-apply,
+
+#advanced-options .btn-clear {
+
+    background-color: transparent;
+
+    border: 1px solid var(--content-border);
+
+    color: var(--secondary-link-color);
+
+    transition: none;
+
+}
+
+
+#advanced-options .btn-apply:hover,
+
+#advanced-options .btn-clear:hover {
+
+    background-color: var(--secondary-link-background-hover);
+
+    color: var(--secondary-link-color-hover);
+
+}
+
+
+/* LIST TABLE */
+
+
+.list-block {
+
+    margin-top: 0px !important;
+
+}
+
+
+.list-unit {
+
+    width: 100%;
+
+}
+
+
+.list-table {
+
+    border: none;
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+}
+
+
+/* Sort row */
+
+
+.list-table>tbody:first-child {
+
+    background-color: transparent;
+
+    flex-basis: 100%;
+
+    padding: 15px 0px;
+
+}
+
+
+.list-table .list-table-header {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    justify-content: center;
+
+}
+
+
+.list-table .list-table-header .header-title:not(.title):not(.score):not(.type):not(.progress):not(.chapters):not(.volumes):not(.rated):not(.started):not(.finished):not(.storage):not(.priority) {
+
+    /* hide not sortable headers */
+
+    display: none;
+
+}
+
+
+.list-table .list-table-header .header-title {
+
+    background: transparent;
+
+    border-bottom: none;
+
+    display: inline-block;
+
+    /* "fix" for premiered header still appearing */
+
+    font-size: 0;
+
+    height: 100%;
+
+    padding: 0 !important;
+
+    width: auto !important;
+
+}
+
+
+.list-table .list-table-header .header-title .link {
+
+    color: var(--link-color) !important;
+
+    filter: drop-shadow(1px 2px 2px black);
+
+    padding: 9px 17px !important;
+
+    text-align: center;
+
+    transition: none !important;
+
+}
+
+
+.list-table .list-table-header .header-title .link:hover {
+
+    color: var(--link-color-hover) !important;
+
+}
+
+
+.list-table .list-table-header .header-title .link .sort-icon {
+
+    color: var(--link-color);
+
+}
+
+
+/* "fix" to correctly remove the empty space from the "Premiered" header */
+
+.anime .header-title.started { margin-left: -20px; }
+
+.anime .header-title.started a { margin-left: 20px; }
+
+
+/* MAIN LIST */
+
+
+/* Data rows */
+
+.list-table tbody.list-item {
+
+    background: var(--content-background);
+
+    box-sizing: border-box;
+
+    height: var(--height-text-section);
+
+    margin: 10px;
+
+    overflow: hidden;
+
+    padding-left: var(--width-img);
+
+    position: relative;
+
+    width: calc(var(--width-img) + var(--width-text-section));
+
+}
+
+
+.list-table-data {
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+    margin-top: var(--height-top-section);
+
+    max-height: calc(var(--height-text-section) - var(--height-top-section) - var(--height-bottom-section));
+
+    overflow: hidden;
+
+    padding: 5px;
+
+    text-align: center;
+
+}
+
+
+.list-table-data:hover {
+
+    /* display scrollbar on hover */
+
+    overflow-y:auto;
+
+}
+
+
+.list-table .list-table-data .data {
+
+    border: none !important;
+
+    color: var(--secondary-text-color);
+
+    display: inline-block;
+
+    padding: 0px !important;
+
+    text-align: left;
+
+}
+
+
+.list-table .list-table-data .data a {
+
+    /* remove color conflicts with default themes */
+
+    color: var(--link-color) !important;
+
+}
+
+
+.list-table .list-table-data a:hover:not(.edit-disabled) {
+
+    color: var(--link-color-hover) !important;
+
+}
+
+
+/* row number */
+
+
+.data.number {
+
+    bottom: 0px;
+
+    height: var(--height-bottom-section);
+
+    line-height: var(--height-bottom-section);
+
+    padding: 0px !important;
+
+    position: absolute;
+
+    right: 5px;
+
+}
+
+
+/* status */
+
+
+.data.status {
+
+    /* color-coded category status bar (repurposed as bottom section background) */
+
+    bottom: 0;
+
+    height: var(--height-bottom-section);
+
+    padding: 0 !important;
+
+    position: absolute;
+
+    right: 0;
+
+    width: var(--width-text-section) !important;
+
+}
+
+
+/* categories colors */
+
+
+.data.status.watching,
+
+.data.status.reading {
+
+    background: linear-gradient(to right, #00280061 0%, #23B23061 100%) !important;
+
+}
+
+
+.data.status.completed {
+
+    background: linear-gradient(to right, #00002861 0%, #26448f61 100%) !important;
+
+}
+
+
+.data.status.onhold {
+
+    background: linear-gradient(to right, #28280061 0%, #f1c83e61 100%) !important;
+
+}
+
+
+.data.status.dropped {
+
+    background: linear-gradient(to right, #28000061 0%, #a12f3161 100%) !important;
+
+}
+
+
+.data.status.plantowatch,
+
+.data.status.plantoread {
+
+    background: linear-gradient(to right, #28282861 0%, #c3c3c361 100%) !important;
+
+}
+
+
+/* image */
+
+
+.data.image {
+
+    bottom: 0;
+
+    height: var(--height-img);
+
+    left: 0;
+
+    padding: 0px !important;
+
+    pointer-events: none;
+
+    position: absolute;
+
+    width: var(--width-img);
+
+}
+
+
+.data.image a {
+
+    height: 100%;
+
+    left: 0px;
+
+    position: relative;
+
+    top: 0px;
+
+    width: 100%;
+
+}
+
+
+.data.image a:before {
+
+    /* anime cover (generated) */
+
+    background-position: center center;
+
+    background-size: cover;
+
+    content: "";
+
+    display: block;
+
+    height: 100%;
+
+    position: absolute;
+
+    transition: all 0.2s;
+
+    width: 100%;
+
+}
+
+
+.data.image img {
+
+    border: none !important;
+
+    height: auto !important;
+
+    width: 100% !important;
+
+}
+
+
+.list-table tbody.list-item::before {
+
+    /* default empty picture when "image" is not checked in the list settings */
+
+    background: var(--content-background);
+
+    content: "\f1c5";
+
+    font-family: FontAwesome;
+
+    font-size: 10em;
+
+    height: var(--height-img);
+
+    left: 0;
+
+    line-height: 2.5;
+
+    overflow: hidden;
+
+    position: absolute;
+
+    text-align: center;
+
+    top: 0;
+
+    width: var(--width-img);
+
+    z-index: -1;
+
+}
+
+
+/* title */
+
+
+.data.title {
+
+    text-align: center !important;
+
+}
+
+
+.data.title .link {
+
+    /* Anime title */
+
+    box-sizing: border-box;
+
+    display: -webkit-box;
+
+    font-size: 1.5em !important;
+
+    height: var(--height-top-section);
+
+    line-height: 1.06em; /* firefox only, hides some 3rd line letters remains */
+
+    order: 1;
+
+    overflow: hidden;
+
+    padding: 5px !important;
+
+    position: absolute;
+
+    right: 0;
+
+    text-shadow: 0px 0px 5px black;
+
+    top: 0;
+
+    width: var(--width-text-section);
+
+    z-index: 1; /* positioned over content-status when no cover */
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-pack: center;
+
+    -webkit-line-clamp: 2;
+
+}
+
+
+/* horizontal separator */
+
+.data.title::after {
+
+    border-top: 1px solid var(--content-border);
+
+    content: "";
+
+    right: calc(var(--width-text-section) / 4);
+
+    position: absolute;
+
+    top: var(--height-top-section);
+
+    visibility: visible;
+
+    width: calc(var(--width-text-section) / 2);
+
+}
+
+
+/* "Airing" / "Rewatching" banner */
+
+.data.title .rewatching,
+
+.data.title .rereading,
+
+.data.title .content-status {
+
+    background: var(--airing-background);
+
+    color: var(--airing-color) !important;
+
+    left: -44px;
+
+    position: absolute;
+
+    top: 15px;
+
+    transform: rotateZ(325deg);
+
+    width: 150px;
+
+    z-index: 0; /* positioned under title when no cover */
+
+}
+
+
+/* watch icon (broadcast) under the title */
+
+.data.title .icon-watch2 {
+
+    bottom: 0;
+
+    height: var(--height-bottom-section);
+
+    position: absolute;
+
+    right: 45px;
+
+    width: 20px;
+
+}
+
+
+.icon-watch2 .malicon.malicon-streaming {
+
+    color: var(--link-color) !important;
+
+    display: block;
+
+    margin-top: 2.5px;
+
+}
+
+
+.icon-watch2 .malicon.malicon-streaming:hover {
+
+    color: var(--link-color-hover) !important;
+
+}
+
+
+.add-edit-more {
+
+    bottom: 0;
+
+    display: flex;
+
+    height: var(--height-bottom-section);
+
+    justify-content: space-between;
+
+    left: calc(var(--width-img) + 5px);
+
+    line-height: 2em;
+
+    margin: 0 !important;
+
+    position: absolute;
+
+    width: 40px;
+
+}
+
+
+.add-edit-more span {
+
+    height: 100%;
+
+    pointer-events: none;
+
+    width: 49%;
+
+}
+
+
+.add-edit-more a {
+
+    box-sizing: border-box;
+
+    display: block;
+
+    /* hide the text */
+
+    font-size: 0px !important;
+
+    height: 100%;
+
+    pointer-events: all;
+
+    width: 100%;
+
+}
+
+
+/* add/edit/more icons */
+
+.add-edit-more span:first-child a::before,
+
+.add-edit-more .more a::before {
+
+    display: block;
+
+    font-family: FontAwesome;
+
+    line-height: 20px;
+
+    font-size: 14px;
+
+}
+
+
+.add-edit-more span:first-child a::before { content: "\f044"; }
+
+.add-edit-more .more a::before { content: "\f129"; }
+
+
+/* notes */
+
+
+.data.title .notes {
+
+    text-align: left;
+
+    width: 100% !important;
+
+}
+
+
+.data.title .notes .text {
+
+    
+
+}
+
+
+.data.title .notes .text:empty::before {
+
+    color: var(--disabled-text-color);
+
+    content: "No notes.";
+
+    font-style: italic;
+
+}
+
+
+.data.title .notes textarea {
+
+    background: var(--text-input-background);
+
+    border: none;
+
+    box-sizing: border-box;
+
+    color: var(--text-color);
+
+    display: block;
+
+    resize: vertical;
+
+}
+
+
+/* Add notes button when no notes yet */
+
+.data.title .notes .edit {
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    width: 60px;
+
+}
+
+
+/* edit button */
+
+
+.data.title .notes .text:not(:empty),
+
+.data.title .notes .edit {
+
+    color: var(--link-color) !important;
+
+    cursor: pointer;
+
+}
+
+
+.data.title .notes .text:not(:empty):hover,
+
+.data.title .notes .edit:hover {
+
+    color: var(--link-color-hover) !important;
+
+}
+
+
+/* score */
+
+
+.data.score {
+
+    bottom: 0;
+
+    height: var(--height-bottom-section);
+
+    line-height: var(--height-bottom-section);
+
+    padding: 2px 5px !important;
+
+    position: absolute;
+
+}
+
+
+.anime .data.score { left: calc(var(--width-img) + 75px); }
+
+.manga .data.score { right: 215px; }
+
+
+.data.score a {
+
+    font-weight: normal !important;
+
+}
+
+
+.data.score a:before {
+
+    content: "\f006";
+
+    font-family: FontAwesome;
+
+    font-size: 13px;
+
+}
+
+
+/* progress */
+
+
+.data.progress,
+
+.data.chapter,
+
+.data.volume {
+
+    bottom: 0;
+
+    height: var(--height-bottom-section);
+
+    line-height: var(--height-bottom-section);
+
+    padding: 0px !important;
+
+    position: absolute;
+
+}
+
+
+.data.progress { right: 90px; }
+
+.data.chapter { left: calc(var(--width-img) + 175px); }
+
+.data.volume { right: 135px; }
+
+
+.data.progress span:first-child:before,
+
+.data.chapter span:first-child:before,
+
+.data.volume span:first-child:before {
+
+    font-family: FontAwesome;
+
+    font-size: 13px;
+
+    padding-right: 5px;
+
+}
+
+
+.data.progress span:first-child:before { content: "\f008"; }
+
+.data.chapter span:first-child:before { content: "\f097"; }
+
+.data.volume span:first-child:before { content: "\f02d"; }
+
+
+/* editing field */
+
+.data.progress span:first-child input,
+
+.data.chapter span:first-child input,
+
+.data.volume span:first-child input {
+
+    background: var(--text-input-background);
+
+    border: none;
+
+    color: var(--text-color);
+
+    position: absolute;
+
+}
+
+
+/* genres */
+
+
+.data.genre,
+
+.data.demographic {
+
+    font-size: 0px;
+
+    line-height: 16.5px;
+
+    text-align: center !important;
+
+}
+
+
+.data.genre span,
+
+.data.demographic span {
+
+    height: 20px;
+
+    display: inline-block;
+
+}
+
+
+.data.genre a,
+
+.data.demographic a {
+
+    border: 1px solid var(--content-border);
+
+    border-radius: 10px;
+
+    font-size: 11px;
+
+    margin: 0px 2px;
+
+    padding: 0px 5px !important;
+
+}
+
+
+/* studio */
+
+
+.data.studio:before,
+
+.data.licensor:before,
+
+.data.magazine:before {
+
+    padding-right: 4px;
+
+}
+
+
+.data.finished::before,
+
+.data.airing-finished::before {
+
+    padding-right: 25px;
+
+}
+
+
+/* tags */
+
+
+.data.tags>div:empty::before {
+
+    color: var(--disabled-text-color);
+
+    content: "No tags.";
+
+    font-style: italic;
+
+}
+
+
+.data.tags textarea {
+
+    background: var(--text-input-background);
+
+    border: none;
+
+    box-sizing: border-box;
+
+    color: var(--text-color);
+
+    display: block;
+
+    resize: vertical;
+
+    width: 100% !important;
+
+}
+
+
+/* edit button */
+
+.list-table .list-table-data .tags a.edit {
+
+    color: var(--link-color) !important;
+
+    margin: 0 auto;
+
+    width: 25px;
+
+}
+
+.list-table .list-table-data .tags a.edit:hover {
+
+    color: var(--link-color-hover) !important;
+
+}
+
+
+/* more-info section */
+
+
+.more-info {
+
+    background: var(--more-background);
+
+    border: none !important;
+
+    bottom: var(--height-bottom-section);
+
+    color: var(--secondary-text-color);
+
+    left: var(--width-img);
+
+    overflow-y: auto;
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    z-index: 1;
+
+}
+
+
+.more-info a {
+
+    color: var(--link-color) !important;
+
+}
+
+
+.more-info a:hover {
+
+    color: var(--link-color-hover) !important;
+
+}
+
+
+.data.number::before { content: "#"; }
+
+
+.data.type::before { content:"Type:"; }
+
+.data.rated::before { content:"Rated:"; }
+
+.data.season::before { content: "Premiered:"; }
+
+.data.studio::before { content: "Studios:"; }
+
+.data.licensor::before { content: "Licensors:"; }
+
+.data.magazine::before {content: "Serialized:"; }
+
+.anime .data.airing-started::before {content: "Aired:"; }
+
+.manga .data.airing-started::before {content: "Published:"; }
+
+.data.airing-finished::before {content: "-"; }
+
+
+.anime .data.started::before {content: "Watched:"; }
+
+.manga .data.started::before {content: "Read:"; }
+
+.data.finished::before {content: "-"; }
+
+.data.days::before {content: "Days:"; }
+
+.data.storage::before {content: "Storage:"; }
+
+.data.retail::before {content: "Retail:"; }
+
+.data.priority::before {content: "Priority:"; }
+
+
+.data.title .notes::before {content: "Notes:"; }
+
+
+.data.tags::before { content: "Tags:"; }
+
+
+/* DATA ORDER */
+
+
+/* vertical separator between data */
+
+.list-table .list-table-data::before {
+
+    content: "";
+
+    display: block;
+
+    flex: 1 1 100%;
+
+    height: 15px;
+
+}
+
+
+.data.genre,
+
+.data.demographic {
+
+    flex: 1 1 100%;
+
+    order: 2;
+
+}
+
+
+.data.season {
+
+    flex: 1 1 100%;
+
+    order: 3;
+
+}
+
+
+.data.type,
+
+.data.rated {
+
+    flex: 1 1 50%;
+
+    order: 4;
+
+}
+
+
+.data.studio,
+
+.data.licensor,
+
+.data.magazine {
+
+    flex: 1 1 100%;
+
+    order: 5;
+
+}
+
+
+.data.airing-started,
+
+.data.airing-finished {
+
+    flex: 1 1 50%;
+
+    order: 6;
+
+}
+
+
+.list-table .list-table-data::before {
+
+    order: 10;
+
+}
+
+
+.data.started,
+
+.data.finished {
+
+    flex: 1 1 50%;
+
+    order: 12;
+
+}
+
+
+.data.days {
+
+    flex: 1 1 50%;
+
+    order: 13;
+
+}
+
+
+.data.priority {
+
+    flex: 1 1 50%;
+
+    order: 14;
+
+}
+
+
+.data.retail,
+
+.data.storage {
+
+    flex: 1 1 25%;
+
+    order: 15;
+
+}
+
+
+/* separator here, with margin-top: 15px on .data.title */
+
+
+.data.title {
+
+    /* not the title, but the notes section */
+
+    flex: 1 1 100%;
+
+    margin-top: 15px;
+
+    order: 21;
+
+}
+
+
+/* separator here, with margin-top: 15px on .data.tags */
+
+
+.data.tags {
+
+    flex: 1 1 100%;
+
+    margin-top: 15px;
+
+    order: 31;
+
+}
+
+
+/* FOOTER */
+
+
+#footer-block {
+
+    background: transparent;
+
+}
+
+
+#copyright {
+
+    color: var(--text-color);
+
+    filter: drop-shadow(1px 1px 1px black);
+
+    font-size: 17px;
+
+}
+
+
+/* Custom copyright text */
+
+#copyright:after {
+
+    content: "Night Shift Layout by Cateinya.";
+
+}
+
+
+/* OTHER */
+
+
+/********
+
+GENERATED SYNOPSES
+
+
+Uncomment these lines and add an @import line with your generated synopses to have them appear in the tooltip
+
+*********/
+
+
+/*.list-table .list-table-data::after {
+
+    color: var(--secondary-text-color);
+
+    content: "Synopsis:";
+
+    flex: 1 1 100%;
+
+    margin-top: 15px;
+
+    order: 31;
+
+    text-align: justify;
+
+}*/
