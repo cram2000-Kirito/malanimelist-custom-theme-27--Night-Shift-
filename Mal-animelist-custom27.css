@@ -1,11 +1,17 @@
 :root {
     /*color status*/
-    --color-current: #2db038;
-    --color-completed: #26448f;
-    --color-onhold: #f1c83e;
-    --color-dropped: #a12f31;
-    --color-plantowatch: #c3c3c3;
+    --color-current-primary: #23B23061;
+    --color-curent-secondary: #00280061;
+    --color-completed-primary: #26448fd4;
+    --color-completed-secondary: #08226461;
+    --color-onhold-primary: #f9c1065e;
+    --color-onhold-secondary: #ae933761;
+    --color-dropped-primary: #a12f3199;
+    --color-dropped-secondary: #4a000061;
+    --color-plantowatch-primary: #a4a4a496;
+    --color-plantowatch-secondary: #28282891;
 
+    --font: "Sarabun","Segoe UI","Arial","FontAwesome 4","FontAwesome","FontAwesome 4.7.0",sans-serif;
     /*interface size proposal (1 = default - 1 > 0 = little - 1 < = big) !no unit!*/
     --interface-size-proposal: 1;
 }
@@ -55,7 +61,7 @@ body.ownlist.anime {
 }
 /*status*/
 .data.status {
-    width: auto;
+    width: auto !important;
     height: auto;
     left: 0;    
     top: var(--height-img);
@@ -170,17 +176,36 @@ tr.more-info {
 
 /*status framework*/
 .list-table .list-table-data .data.status.reading ~ .data.image, .list-table .list-table-data .data.status.watching ~ .data.image {
-    border: var(--color-current) 2px solid !important;
+    border: var(--color-current-primary) 2px solid !important;
 }
+.data.status.watching, .data.status.reading {
+    background: linear-gradient(to right, var(--color-curent-secondary) 0%, var(--color-current-primary) 100%) !important;
+}
+
 .list-table .list-table-data .data.status.completed ~ .data.image {
-    border: var(--color-completed) 2px solid !important; 
+    border: var(--color-completed-primary) 2px solid !important; 
 }
+.data.status.completed {
+    background: linear-gradient(to right, var(--color-completed-secondary) 0%, var(--color-completed-primary) 100%) !important;
+}
+
 .list-table .list-table-data .data.status.onhold ~ .data.image {
-    border: var(--color-onhold) 2px solid !important; 
+    border: var(--color-onhold-primary) 2px solid !important; 
 }
+.data.status.onhold {
+    background: linear-gradient(to right, var(--color-onhold-secondary) 0%, var(--color-onhold-primary) 100%) !important;
+}
+
 .list-table .list-table-data .data.status.dropped ~ .data.image {
-    border: var(--color-dropped) 2px solid !important; 
+    border: var(--color-dropped-primary) 2px solid !important; 
 }
+.data.status.dropped {
+    background: linear-gradient(to right, var(--color-dropped-secondary) 0%, var(--color-dropped-primary) 100%) !important;
+}
+
 .list-table .list-table-data .data.status.plantoread ~ .data.image, .list-table .list-table-data .data.status.plantowatch ~ .data.image {
-    border: var(--color-plantowatch) 2px solid !important; 
+    border: var(--color-plantowatch-primary) 2px solid !important; 
+}
+.data.status.plantowatch, .data.status.plantoread {
+    background: linear-gradient(to right, var(--color-plantowatch-secondary) 0%, var(--color-plantowatch-primary) 100%) !important;
 }
