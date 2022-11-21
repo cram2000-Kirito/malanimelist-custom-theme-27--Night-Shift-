@@ -17,6 +17,7 @@
 }
 html, body {
     font-size: calc(11px * var(--interface-size-proposal));
+    font-family: var(--font);
 }
 /*background image*/
 body.ownlist.anime {
@@ -49,6 +50,7 @@ body.ownlist.anime {
     top: calc(var(--height-img) + 2.272727272727273em * 2);
     padding: -5px !important;
     font-size: 1.2em !important;
+    letter-spacing: 0.5px;
     text-overflow: ellipsis;
     text-align: center;
     text-shadow: 0 0 2px #000,0 0 1px #000,1px 1px 7px #000,0 0 0 #000 !important;
