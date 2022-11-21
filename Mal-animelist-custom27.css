@@ -38,7 +38,7 @@ body.ownlist.anime {
 }
 .data.title .link {
     width: calc((var(--width-img)) - 1.5em) !important;
-    height: auto !important;
+    height: 9% !important;
     left: 9px;
     top: calc(var(--height-img) + 2.272727272727273em * 2);
     padding: -5px !important;
