@@ -10,14 +10,23 @@
     --color-dropped-secondary: #4a000061;
     --color-plantowatch-primary: #a4a4a496;
     --color-plantowatch-secondary: #28282891;
+    --airing-color: #000;
+    --airing-background: #ffff00e6;
 
     --font: "Sarabun","Segoe UI","Arial","FontAwesome 4","FontAwesome","FontAwesome 4.7.0",sans-serif;
     /*interface size proposal (1 = default - 1 > 0 = little - 1 < = big) !no unit!*/
     --interface-size-proposal: 1;
 }
+@media only screen and (max-width: 1080px) {
+    :root{
+      --interface-size-proposal: 0.95;
+    }
+}
+
 html, body {
     font-size: calc(11px * var(--interface-size-proposal));
     font-family: var(--font);
+    overflow-x: hidden;
 }
 /*background image*/
 body.ownlist.anime {
@@ -210,4 +219,304 @@ tr.more-info {
 }
 .data.status.plantowatch, .data.status.plantoread {
     background: linear-gradient(to right, var(--color-plantowatch-secondary) 0%, var(--color-plantowatch-primary) 100%) !important;
+}
+
+
+
+
+/*header*/
+.icon-menu.profile::before {
+    text-indent: -221px;
+}
+
+
+
+
+.status-menu-container .search-container #search-box{
+    margin-top: 0px !important;
+}
+.status-menu-container .search-container #search-button {
+    display: inline-block;
+    height: 22px;
+    width: auto;
+}
+.status-menu-container .search-container {
+    top: 11px;
+}
+.status-menu-container .search-container #search-box input {
+    text-align: right;
+    padding-right: 5px;
+}
+.status-menu-container .search-container #search-button {
+    margin: 0;
+}
+.status-menu-container .search-container #search-box.open {
+    max-width: 180px;
+    width: 10em;
+}
+
+
+.list-table > tbody:first-child {
+    display: block;
+    position: absolute;
+    top: -17px;
+    right: 16px;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+}
+.list-table > tbody::before {
+    content: "\f0dc";
+    font-family: "FontAwesome 4","FontAwesome","FontAwesome 4.7.0";
+    font-size: 1.3rem;
+    color: #FFF;
+}
+tbody > .list-table-header {
+    --pos: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility .2s, opacity .2s;
+}
+tbody:hover > .list-table-header {
+    visibility: visible;
+    opacity: 1;
+} 
+.list-table-header .header-title {
+    position: fixed;
+    top: 94px;
+    right: var(--pos);
+    height: auto !important;
+}
+.list-table .list-table-header .header-title{
+    padding: 20px 0 0 0 !important;
+}
+.header-title.score {
+    right: calc(var(--pos) + 75px);
+}
+.header-title.progress {
+    right: calc(var(--pos) + 119px);
+}
+.header-title.volumes {
+    right: calc(var(--pos) + 116px);
+}
+.header-title.chapters {
+    right: calc(var(--pos) + 173px);
+}
+.header-title.type {
+    right: calc(var(--pos) + 179px);
+}
+.header-title.priority {
+    right: calc(var(--pos) + 232px);
+}
+
+
+.header .header-menu .btn-menu .fa-angle-down::before {
+    padding: 0 2px;
+}
+.icon.icon-anime-list {
+    vertical-align: sub;
+    margin-left: 5px;
+}
+.header-info {
+    display: inline-block;
+    margin-top: 1.2rem !important;
+}
+.status-menu .status-button.on, .status-menu .status-button:hover{
+    transition-duration: 1s;
+}
+
+.list-unit .list-status-title .stats a {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    overflow: hidden;
+}
+.list-unit .list-status-title .text{
+    width: 100vw;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+.stats{
+    top: -36px;
+    right: 33px !important;
+}
+.stats > a {
+    vertical-align: middle;
+}
+.header .header-title {
+    transition: left 0.2s ease 0s, background 0.2s ease 0s;
+    left: 0px;
+}
+@media screen and (max-width: 775px){
+    .list-table-header .header-title{
+        top: 123px;
+    }
+    .header .header-title {
+        transition: left 0.2s ease 0s, background 0.2s ease 0s;
+        left: -255px;
+    }
+}
+i.fa-solid.fa-chart-column, .fa-solid.fa-filter {
+    padding-top: 1.2rem;
+}
+.icon.icon-manga-list {
+    vertical-align: sub;
+    margin-left: 5px;
+}
+
+
+.list-menu-float{
+    transition: margin 0.5s ease 0s, z-index 0s ease 0s, background 0.2s ease 0s;
+}
+.list-menu-float::before{
+    top: -2px;
+    transition: left 0.5s ease 0s, background 0.2s ease 0s;
+}
+
+
+#copyright, #recaptcha-terms {
+    max-width: 98vw;
+    margin: 0 1vw;
+    padding: 0 0.3rem;
+}
+#copyright::after {
+    content: "Night Shift Layout by Cateinya. And modify by Cram2000_Kirito";
+}
+
+
+
+
+@media screen and (max-width: 933px){
+    .status-menu{
+        height: 40px;
+    }
+    .status-button{
+        visibility: collapse;    
+    }
+
+    .status-button.all_anime::before{
+        content: "All";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        left: -8.25em;
+    }
+    .status-button.reading::before, .status-button.watching::before{
+        content: "Currently";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        left: -6.6em;
+    }
+    .status-button.completed::before{
+        content: "Completed";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        left: -2.2em;
+    }
+    .status-button.onhold::before{
+        content: "Hold";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        right: -3.9em;
+    }
+    .status-button.dropped::before{
+        content: "Dropped";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        right: -8.05em;
+    }
+    .status-button.plantowatch::before{
+        content: "Plan";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        right: -10.4em;
+    }
+}
+
+@media screen and (max-width: 674px){
+    .status-menu{
+        height: 80px;
+    }
+    .status-button{
+        visibility: collapse;
+    }
+
+    .status-button.all_anime::before{
+        content: "All";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        left: -4.25em;
+        width: 100%;
+    }
+    .status-button.reading::before, .status-button.watching::before{
+        content: "Currently";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        left: -2.65em;
+        width: 100%;
+    }
+    .status-button.completed::before{
+        content: "Completed";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        left: 1.8em;
+        width: 100%;
+    }
+    .status-button.onhold::before{
+        content: "Hold";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        top: 2.2em;
+        left: -10.5em;
+        right: 0 !important;
+        width: 100%;
+    }
+    .status-button.dropped::before{
+        content: "Dropped";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        top: 2.2em;
+        left: -3.8em;
+        right: 0 !important;
+        width: 100%;
+    }
+    .status-button.plantowatch::before{
+        content: "Plan";
+        visibility: visible;
+        position: absolute;
+        display: block;
+        top: 2.2em;
+        left: 1em;
+        right: 0 !important;
+        width: 100%;
+    }
+}
+
+#advanced-options select, .filter-widget input{
+    background-color: #202020;
+    color: var(--text-color);
+}
+#advanced-options .btn-apply {
+    background-color: #105110;
+}
+#advanced-options .btn-apply:hover {
+    background-color: #157315;
+}
+#advanced-options .btn-clear {
+    background-color: #777;
+}
+#advanced-options .btn-clear:hover {
+    background-color: #8a8787;
 }
